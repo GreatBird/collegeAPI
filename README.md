@@ -2,6 +2,7 @@
 you code because you love it
 <br>
 0.我最重要一定要先读我<br>
+（0）数据库访问地址：115.28.65.99/phpmyadmin   数据库是collegeAPI<br>
 （1）下面的第一条和第二条可能已经作废，放在这是为了参考作用。<br>
 （2）返回数据类型是JSON格式。<br>
 （3）多数接口输入参数个数是动态的，默认后台sql拼装是and<br>
@@ -223,6 +224,7 @@ updateResponse.php<br>
 返回值：{"code":1,"info":"update success and id is 1"}<br>
 {"code":0,"info":"update failed id not exist"}<br>
 <br>
+
 
 
 
