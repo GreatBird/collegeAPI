@@ -1,0 +1,14 @@
+.icon{
+    height: 30px;
+    width: 30px;
+}
+.icon-home{
+    background: url("../img/icon/iconbox.jpg")  no-repeat;
+    background-position: -45px -26px;
+    border-radius: 20px;
+}
+.icon-login{
+    background: url("../img/icon/iconbox.jpg")  no-repeat;
+    background-position: -112px -137px;
+    border-radius: 20px;
+}

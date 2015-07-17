@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>看帖页面</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="javascript/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+<!--顶部条-->
+<header>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-1 col-md-offset-1">
+                <a href="#"><img alt="猎聘网logo" class="pngfix" src="http://s.lietou-static.com/revs/p/beta2/images/logo_a2145e0d.png" width="110" height="40" /><em><i class="icons16 icons16-home-white" title="首页"></i></em></a>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="input-group input-group-sm search" style="width: 200px;padding-top: 4px;float: right;">
+                    <input type="text" class="form-control"  placeholder="想知道些什么？" aria-describedby="basic-addon2">
+                    <span onclick="" class="input-group-addon" id="basic-addon2">Go</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <span class="header-link">
+                       <!--<span>欢迎来到我们的网站</span>-->
+                        <a class="" href="#"><img src="img/icon/mesg.png"></a>
+                        <a class="" href="#"><img src="img/icon/login.png"></a>
+                        <a class="" href="#"><img src="img/icon/me.png"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="height: 60px"></div>
+<!--顶部条结束-->
+<style >
+    body{
+        background-color: #dcdcdc;
+    }
+    .postview-title{
+        background-color: white;
+        text-align: center;
+        margin-bottom: 20px;
+        box-shadow: 5px 5px 2px #888888;
+        border-radius: 10px;
+    }
+    .postview-tagbox{
+        text-align: right;
+    }
+    .postview-tagbox li{
+        display: inline-block;
+
+    }
+    .tag{
+        height: 20px;
+        width: 20px;
+        background: url("img/icon/login.png");
+    }
+    .postview-wrap{
+
+    }
+    .postview-floor{
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 2px #888888;
+    }
+    .postview-avatar-wrap{
+        height: 200px;
+        padding: 30px 0px 0px 35px;
+
+
+    }
+    .postview-avatar{
+        height: 60px;
+        width: 60px;
+        overflow: hidden;
+    }
+    .postview-avatar img{
+        height: 60px;
+        width: 60px;
+    }
+    .postview-name{
+        margin-top: 1em;
+        width: 100px;
+        font-size: 13px;
+    }
+    .postview-content-wrap{
+        position: relative;
+        padding: 20px;
+        border-left:2px solid ghostwhite;
+    }
+    .postview-content{
+        min-height: 250px;
+
+    }
+    .postview-content-footer{
+        margin-top: 2em;
+        text-align: right;
+    }
+    .separate{
+        padding-right: 1em;
+        border-right: 1px solid #eee;
+    }
+    .postview-reply-wrap{
+        background-color: mintcream;
+
+    }
+    .postview-reply-avatar{
+        padding: 0px;
+    }
+    .postview-reply-avatar img {
+        height: 30px;
+        width: 30px;
+    }
+    .postview-reply-content{
+        padding-top: 1em;
+        min-height: 1em;
+        border-bottom: 1px solid #dcdcdc;
+        }
+
+    .postview-reply-repbtn{
+        padding: 0px;
+
+    }
+    .postview-reply-floor{
+        display: block;
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+    }
+    .reply-wrap{
+        box-shadow: 5px 5px 2px #888888;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
+</style>
+<!--看帖主体-->
+<div class=" container">
+    <div class="row">
+        <div class="col-lg-7 col-md-offset-2 ">
+            <div class="postview-title">
+                <h2>这个是标题啊</h2>
+            </div>
+            <!--帖子的各种标签-->
+            <div class="postview-tagbox">
+                <ul>
+                    <li><div class="tag"></div></li>
+                    <li><div class="tag"></div></li>
+                    <li><div class="tag"></div></li>
+                    <li><div class="tag"></div></li>
+                </ul>
+            </div>
+            <!--帖子的各种标签-->
+
+            <!--所有帖子-->
+            <div class="postview-wrap">
+                <!--楼层-->
+                <div class="row postview-floor">
+                    <div class="col-md-2 postview-avatar-wrap">
+                        <div class="postview-avatar">
+                            <img src="img/avatar.jpg">
+                        </div>
+                        <div class="postview-name">傻逼楼主</div>
+                    </div>
+                    <div class="col-md-10 postview-content-wrap">
+                        <div class="postview-content">
+                            浏览器对象模型 (BOM)
+                            甚至 HTML DOM 的 document 也是 window 对象的属性之一：<br>
+                        </div>
+                        <div class="postview-content-footer">
+                            <span class="separate">举报</span>
+                            <span class="separate">来自炫酷外星人笔记本</span>
+                            <span class="date separate">2015-5-19</span>
+                            <span class="">查看留言</span>
+                        </div>
+                        <!--留言-->
+                        <div class="container-fluid postview-reply-wrap">
+                            <div class="row postview-reply-floor">
+                                <div class=" col-md-1 postview-reply-avatar">
+                                    <img src="img/avatar.jpg">
+                                </div>
+                                <div class="postview-reply-content col-md-10">
+                                    dddddd
+                                </div>
+                                <div class=" col-md-1 postview-reply-repbtn">
+                                    <a href="#">回复</a>
+                                </div>
+                            </div>
+                            <div class="row postview-reply-floor">
+                                <div class=" col-md-1 postview-reply-avatar">
+                                    <img src="img/avatar.jpg">
+                                </div>
+                                <div class="postview-reply-content col-md-10">
+                                    dddddd
+                                </div>
+                                <div class=" col-md-1 postview-reply-repbtn">
+                                    <a href="#">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--留言结束-->
+                    </div>
+                </div>
+                <!--楼层结束-->
+                <!--楼层-->
+                <div class="row postview-floor">
+                    <div class="col-md-2 postview-avatar-wrap">
+                        <div class="postview-avatar">
+                            <img src="img/avatar.jpg">
+                        </div>
+                        <div class="postview-name">傻逼楼主</div>
+                    </div>
+                    <div class="col-md-10 postview-content-wrap">
+                        <div class="postview-content">
+                            浏览器对象模型 (BOM)
+                            甚至 HTML DOM 的 document 也是 window 对象的属性之一：<br>
+                        </div>
+                        <div class="postview-content-footer">
+                            <span class="separate">举报</span>
+                            <span class="separate">来自炫酷外星人笔记本</span>
+                            <span class="date separate">2015-5-19</span>
+                            <span class="">查看留言</span>
+                        </div>
+                        <!--留言-->
+                        <div class="container-fluid postview-reply-wrap">
+                            <div class="row postview-reply-floor">
+                                <div class=" col-md-1 postview-reply-avatar">
+                                    <img src="img/avatar.jpg">
+                                </div>
+                                <div class="postview-reply-content col-md-10">
+                                    dddddd
+                                </div>
+                                <div class=" col-md-1 postview-reply-repbtn">
+                                    <a href="#">回复</a>
+                                </div>
+                            </div>
+                            <div class="row postview-reply-floor">
+                                <div class=" col-md-1 postview-reply-avatar">
+                                    <img src="img/avatar.jpg">
+                                </div>
+                                <div class="postview-reply-content col-md-10">
+                                    dddddd
+                                </div>
+                                <div class=" col-md-1 postview-reply-repbtn">
+                                    <a href="#">回复</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--留言结束-->
+                    </div>
+                </div>
+                <!--楼层结束-->
+                <div>查看更多</div>
+            </div>
+            <!--所有帖子结束-->
+            <!--回帖框-->
+            <div class="reply-wrap">
+                <script type="text/plain" id="editor" name="ceshi"></script>
+            </div>
+            <!--回帖框结束-->
+        </div>
+    </div>
+</div>
+<!--看帖主体结束-->
+<footer style="height: 300px">
+
+</footer>
+<script type="text/javascript" src="javascript/jquery-1.9.1.min.js" ></script>
+<script type="text/javascript" src="javascript/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="javascript/ueditor/ueditor.all.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        init();
+
+    });
+    function init(){
+        var ue=UE.getEditor("editor", {
+            initialFrameHeight:200
+        });
+    }
+
+</script>
+</body>
+</html>

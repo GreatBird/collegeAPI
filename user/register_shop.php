@@ -11,7 +11,7 @@ include '../con.php';
         $tempValues=$tempValues.'\''.$value.'\''.' , ';
     }
     $sql=$sql.' ('.substr($tempColumn, 0,-2).') '.'values'.' ('.substr($tempValues, 0,-2).' )';
-    echo $sql;
+    //echo $sql;
     $result=mysqli_query($conn,$sql);
     if ($result) {
     $arr = array ('code'=>1,'info'=>'register_shop success!'); 

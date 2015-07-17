@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>注册</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="javascript/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+</head>
+<style>
+    body{        
+        background-color: #78bc98;  /*大背景颜色*/		
+        -webkit-background-size: cover;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .sign{
+        position: absolute;
+        height: 400px;
+        width: 400px;
+        top: 50%;
+        left: 50%;
+    }
+    .login-form{
+        position: absolute;
+        display: block;
+        background-color: #ffffff; /*注册表单背景颜色*/
+        height: 400px;
+        width: 400px;
+        top: -50%;
+        left: -50%;
+        border-radius: 10px;
+        filter: alpha(opacity=8);
+        opacity:0.9;   /*注册表单透明度*/
+        overflow: hidden;
+        text-align: center;
+    }
+    .logo img{
+        height: 150px;
+        border: none;
+        display: block;
+        margin: 0 auto;
+        opacity:0.5;
+    }
+    .login-form form{
+        margin: 10px 50px 10px 50px;
+    }
+    .login-form span{
+        height: 5px;
+    }
+    .login-form input {
+        background-color: white; /*输入框底色*/
+    }
+    .login-form button {
+        background-color: #b9def0; /*提交按钮颜色*/
+
+    }
+    .form-row {
+        margin-top: 25px;
+    }
+
+    .form-group span{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .to-login{
+        font-size: 12px;
+    }
+
+
+</style>
+<body>
+<div class="logo" style="display: none"><a href="#"><img src="img/logo.png"></a></div>
+<div class="sign">
+    <div class="login-form">
+        <form >
+            <div class="form-group">
+                <input class="form-control form-row" placeholder="真实姓名">
+                <input class="form-control form-row" placeholder="电话号码">
+                <input class="form-control form-row" placeholder="邮箱">
+                <input class="form-control form-row" placeholder="密码">
+                <span>点击立即加入即代表您同意本网站的用户协议、隐私权限等及cookie政策。</span>
+                <button class="form-control form-row">立即加入</button>
+            </div>
+        </form>
+        <div class="form-row to-login">已有账号？<a href="#" >登录</a></div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

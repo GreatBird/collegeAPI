@@ -9,19 +9,19 @@
 $("document").ready(function(){
 
   $(".js-ajax-php-json").submit(function(){
-    var data = {
-      // "action": "test"
-    };
+    // var data = {
+    // };
 
-    var data = $(this).serialize() + "&" + $.param(data);
-    alert(data);
-    console.log(data);
+    // var data = $(this).serialize() + "&" + $.param(data);
+    var data1=JSON.stringify({ nickname:"new",password:"new"});
+    // alert(data);
+     console.log(data1);
 
     $.ajax({
       type: "POST",
       dataType: "json",
-      url: "../job/queryAllJobs.php", //Relative or absolute path to response.php file
-      data: data,
+      url: "../user/register_shop.php", //Relative or absolute path to response.php file
+      data: data1,
       success: function(data) {
         $(".the-return").html(
           "return json is: " +data["json"]+"<br> message is :"+data["code"]+"<br> code is :"
@@ -52,7 +52,9 @@ $("document").ready(function(){
     <option value="male">Male</option>
     <option value="female">Female</option>
   </select> -->
-  <input type="text" name="all" value="true" placeholder="Favorite beverage" />
+  <input type="text" name="nickname" value="" placeholder="Favorite beverage" />
+    <input type="text" name="password" value="" placeholder="Favorite beverage" />
+
   <input type="submit" name="submit" value="Submit form"  />
 </form>
 
