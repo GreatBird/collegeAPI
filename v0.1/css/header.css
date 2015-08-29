@@ -1,0 +1,63 @@
+.header {
+    background-color:  #3f3f3f;
+    height:40px;
+    font-family: "宋体";
+    font-size: 15px;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+}
+.header a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+.header-link{
+    padding-top: 5px;
+    display: inline-block;
+    float:right;
+}
+.header-link a {
+    padding-right: 15px;
+}
+.header-link span{
+    padding-right: 30px;
+}
+.header-link div{
+    display: inline-block;
+}
+.top-box{
+    background:linear-gradient(45deg, #020031 0px, #6d3353 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 400px;
+    box-shadow: 0px 8px 5px #888888;
+    margin-bottom: 8px;
+    background-image: url("../img/mid-bc.png");
+}
+
+.navbar a{
+    color: #000000;
+    font-family: "宋体";
+    font-size: 20px;
+    margin-left: 30px;
+    padding-top: 8px;
+    display: inline-block;
+    text-align: center;
+}
+.navbar a:hover{
+    color: orange;
+    text-decoration: none;
+    border-bottom: 3px solid #333333;
+}
+li{
+    list-style-type: none;
+}
+.footmark{
+    height: 40px;
+    padding-left: 60px;
+}

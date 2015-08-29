@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>我的设置</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="javascript/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+<!--顶部条-->
+<header>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-1 col-md-offset-1">
+                <a href="#"><img alt="猎聘网logo" class="pngfix" src="http://s.lietou-static.com/revs/p/beta2/images/logo_a2145e0d.png" width="110" height="40" /><em><i class="icons16 icons16-home-white" title="首页"></i></em></a>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="input-group input-group-sm search" style="width: 200px;padding-top: 4px;float: right;">
+                    <input type="text" class="form-control"  placeholder="想知道些什么？" aria-describedby="basic-addon2">
+                    <span onclick="" class="input-group-addon" id="basic-addon2">Go</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <span class="header-link">
+                       <!--<span>欢迎来到我们的网站</span>-->
+                        <a class="" href="#"><img src="img/icon/mesg.png"></a>
+                        <a class="" href="#"><img src="img/icon/login.png"></a>
+                        <a class="" href="#"><img src="img/icon/me.png"></a>
+
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="height: 80px"></div>
+<!--顶部条结束-->
+<style>
+    form{
+        padding-bottom: 40px;
+        border-bottom: 1px solid #ccc ;
+    }
+    .tab-navs{
+        height: 41px;
+        border-bottom: 1px solid #ccc;
+        list-style: none;
+        margin: 0 0 10px;
+        padding: 0;
+        text-align: center;
+    }
+    .tab-nav{
+        float: left;
+        display: block;
+        padding: 10px 2em;
+    }
+    .active-nav{
+        background-color: white;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        border-right: 1px solid #ccc;
+    }
+    .setting-info{
+        color: #999;
+    }
+    .setting-content{
+        margin-top: 1em;
+    }
+    .setting-item{
+        margin-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px dotted #f2f2f2
+    }
+    .setting-item label{
+        width: 6em;
+        float: left;
+    }
+    .setting-item div{
+        display: inline-block;
+    }
+    .setting-item input{
+        margin-right: 1em;
+    }
+    .setting-save{
+        padding-top: 2em;
+    }
+    .setting-save button{
+        color: white;
+        background-color: green;
+        padding: 5px 10px 5px 10px;
+        border-radius: 10px;
+    }
+</style>
+<!--我的设置-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-1 "></div>
+        <div class="col-md-9 ">
+            <!--导航条-->
+            <ul class="tab-navs">
+                <li class="tab-nav active-nav"><a href="#">账号</a></li>
+                <li class="tab-nav"><a href="#">隐私</a></li>
+                <li class="tab-nav "><a href="#">过滤</a></li>
+                <li class="tab-nav"><a href="#">过滤</a></li>
+                <li class="tab-nav"><a href="#">过滤</a></li>
+            </ul>
+            <!--导航条结束-->
+            <!--内容表单-->
+            <form>
+                <div class="setting-info">修改你的帐号基本资料，登录信息和其他安全设置。 </div>
+                <div class="setting-content">
+                    <div class="setting-item">
+                        <label>姓名</label>
+                        <div>刘珣</div>
+                    </div>
+                    <div class="setting-item">
+                        <label>个性网址</label>
+                        <div>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label>邮箱</label>
+                        <div>
+                            <input class="form-control">
+                        </div>
+                    </div>
+                    <div class="setting-item">
+                        <label>隐私保护</label>
+                        <div>
+                            <input type="checkbox">在站外搜到我在知乎创作的内容时，我的姓名将不会被显示
+                            <br><a href="#">什么情况下应该使用这个选项？</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="setting-save">
+                    <button>保存</button>
+                </div>
+            </form>
+            <!--内容表单结束-->
+        </div>
+        <div class="col-md-2 "></div>
+    </div>
+</div>
+<!--我的设置结束-->
+
+
+</body>
+</html>

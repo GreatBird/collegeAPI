@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>帖子列表</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="javascript/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<style>
+    .left-navbar{
+        position: relative;
+        margin-top: 40px;
+        width: 180px;
+        height: 300px;
+        border: 1px solid #000000;
+        text-align: center;
+        font-size: 14px;
+        background-image: url("img/nav_bc.png");
+        font-family: "微软雅黑";
+        left: -20%;
+    }
+    .left-navbar-head{
+        background: none repeat scroll 0 0 #c40000;
+        color: white;
+        font-weight: 700;
+        padding: 5px 0px 5px 0px;
+    }
+    .classify{
+        text-align: left;
+    }
+    .classify a{
+        color: white;
+    }
+    .classify span{
+        padding: 0px 15px 0 15px;
+    }
+    .classify li {
+        padding: 5px 0px 5px 0px;
+    }
+    .classify-selected{
+        background:none repeat scroll 0 0 #4a4a4a ;
+    }
+
+    .left-navbar h4{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        background-color: red;
+        color: #ffffff;
+    }
+    .left-navbar li {
+    }
+    .post-list{
+
+        line-height: 1.7;
+        padding-top: 40px;
+    }
+    .post-list img{
+        display: inline-block;
+    }
+    .post-list-header{
+        border-bottom: 1px solid #dcdcdc;
+        position: relative;
+        height: 40px;
+    }
+    .post-list-header span {
+
+    }
+    .post-list-face{
+        margin-top: 10px;
+        padding-bottom: 20px;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #dcdcdc;
+        overflow:  hidden;
+    }
+    .avatar{
+        height: 100%;
+        width: 50px;
+        display: inline-block;
+        float: left;
+        margin: 8px;
+    }
+    .avatar img {
+        height: 50px;
+        width: 50px;
+    }
+    .post-inf{
+
+        height: 100%;
+        width: 80% ;
+        display: inline-block;
+    }
+    .source{
+        font-size: 13px;
+    }
+    .post-link a{
+        color: #259;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .author{
+        color: inherit;
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .content{
+        color: #000000;
+
+    }
+    .zm-meta-panel a{
+        color: #999;
+        font-size: 13px;
+        margin-right: 10px;
+    }
+</style>
+<body>
+<!--顶部条-->
+<header>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-1 col-md-offset-1">
+                <a href="#"><img alt="猎聘网logo" class="pngfix" src="http://s.lietou-static.com/revs/p/beta2/images/logo_a2145e0d.png" width="110" height="40" /><em><i class="icons16 icons16-home-white" title="首页"></i></em></a>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="input-group input-group-sm search" style="width: 200px;padding-top: 4px;float: right;">
+                    <input type="text" class="form-control"  placeholder="想知道些什么？" aria-describedby="basic-addon2">
+                    <span onclick="" class="input-group-addon" id="basic-addon2">Go</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <span class="header-link">
+                       <!--<span>欢迎来到我们的网站</span>-->
+                        <a class="" href="#"><img src="img/icon/mesg.png"></a>
+                        <a class="" href="#"><img src="img/icon/login.png"></a>
+                        <a class="" href="#"><img src="img/icon/me.png"></a>
+
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="height: 40px"></div>
+<!--顶部条结束-->
+
+</div>
+<!--顶部条结束-->
+
+<div class="container">
+    <div class="row">
+        <!--左侧类别导航-->
+        <div class="col-md-2 " >
+                <div class="left-navbar">
+                    <div class="left-navbar-head">
+                        全部分类
+                    </div>
+                    <ul class="classify">
+                        <li class="classify-selected"><span>@</span><a href="#">教育</a></li>
+                        <li><span>@</span><a href="#">教育</a></li>
+                        <li><span>@</span><a href="#">教育</a></li>
+                        <li><span>@</span><a href="#">教育</a></li>
+                        <li><span>@</span><a href="#">教育</a></li>
+                    </ul>
+                </div>
+        </div>
+       <!--左侧类别导航结束-->
+        <div class="col-md-7 post-list" >
+            <!--帖子列表头部-->
+            <div class="post-list-header">
+                <span style="float: left"><img src="" >最近动态</span>
+                <span style="float: right" ><a href="setting.html"><img src="" >设置</a> </span>
+            </div>
+            <!--帖子列表头部结束-->
+      <!--帖子列表面板-->
+        <div class="post-list-face">
+            <div class="avatar"><img src="img/1.JPG" >@</div>
+            <div class="post-inf" >
+                <div class="source">来自<a href="#">教育</a></div>
+                <div class="post-link"><h2><a href="postview.html">这是第一个帖子的标题啊？</a></h2></div>
+                <div class="author">作者</div>
+                <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                </div>
+                <div class="zm-meta-panel">
+                    <a class="" href="#">@小标</a>
+                    <a class="" href="#">@小标</a>
+                    <a class="" href="#">@小标</a>
+                </div>
+            </div>
+        </div>
+            <div class="post-list-face">
+                <div class="avatar"><img src="img/1.JPG" >@</div>
+                <div class="post-inf" >
+                    <div class="source">来自<a href="#">教育</a></div>
+                    <div class="post-link"><h2><a href="#">这是第一个帖子的标题啊？</a></h2></div>
+                    <div class="author">作者</div>
+                    <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                    </div>
+                    <div class="zm-meta-panel">
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list-face">
+                <div class="avatar"><img src="img/1.JPG" >@</div>
+                <div class="post-inf" >
+                    <div class="source">来自<a href="#">教育</a></div>
+                    <div class="post-link"><h2><a href="#">这是第一个帖子的标题啊</a></h2></div>
+                    <div class="author">作者</div>
+                    <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                    </div>
+                    <div class="zm-meta-panel">
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list-face">
+                <div class="avatar"><img src="img/1.JPG" >@</div>
+                <div class="post-inf" >
+                    <div class="source">来自<a href="#">教育</a></div>
+                    <div class="post-link"><h2><a href="#">这是第一个帖子的标题啊</a></h2></div>
+                    <div class="author">作者</div>
+                    <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                    </div>
+                    <div class="zm-meta-panel">
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list-face">
+                <div class="avatar"><img src="img/1.JPG" >@</div>
+                <div class="post-inf" >
+                    <div class="source">来自<a href="#">教育</a></div>
+                    <div class="post-link"><h2><a href="#">这是第一个帖子的标题啊？</a></h2></div>
+                    <div class="author">作者</div>
+                    <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                    </div>
+                    <div class="zm-meta-panel">
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-list-face">
+                <div class="avatar"><img src="img/1.JPG" >@</div>
+                <div class="post-inf" >
+                    <div class="source">来自<a href="#">教育</a></div>
+                    <div class="post-link"><h2><a href="#">这是第一个帖子的标题啊？</a></h2></div>
+                    <div class="author">作者</div>
+                    <div class="content">请每个星期跑步不超过3次的举一下手？在一年多以前，我就是你们其中的一员，而我现在已经是隔天跑10公里，虽然故事很俗套，我想将自己的故事和大家分享一下。在两年半以前，我是个155斤的胖子，在体育课慢跑热身的时候，我成为我们学校建校85周年以来，第一…<a href="#" style="color: #259">查看更多</a>
+                    </div>
+                    <div class="zm-meta-panel">
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                        <a class="" href="#">@小标</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--帖子列表面板结束-->
+        </div>
+    </div>
+</div>
+<!--
+          <div id="nav">
+                    <div class="area clearfix">
+
+                        <div class="category-content" id="guide_2">
+                            <div><span class="all-goods">全部分类<em>（686310）</em></span></div>
+                            <div class="category">
+                                <ul class="category-list" id="js_climit_li">
+                                    <li class="appliance js_toggle relative first">
+                                        <div class="category-info list-nz">
+                                            <h3 class="category-name b-category-name"><i></i><a id="s-category-289" href="#" target="_blank" class="ml-22" title="女装">学习</a></h3>
+                                            <p class="c-category-list limit-24"><a href="#" target="_blank" title="连衣裙" id="s-goods-category-289-1">细分</a><a href="#" target="_blank" title="针织衫" id="s-goods-category-289-2">细分</a><a href="#" target="_blank" title="T恤" id="s-goods-category-289-3">细分</a><a href="#" target="_blank" title="牛仔裤" id="s-goods-category-289-4">细分</a></p>
+                                            <em>&gt;</em></div>
+
+                                    </li>
+                                    <li class="appliance js_toggle relative">
+                                        <div class="category-info list-nanz">
+                                            <h3 class="category-name b-category-name"><i></i><a  href="#" target="_blank" class="ml-22" title="男装">兼职</a></h3>
+                                            <p class="c-category-list limit-24"><a  href="#" target="_blank" title="T恤">细分</a><a id="" href="#" target="_blank" title="衬衫">细分</a><a  href="#" target="_blank" title="牛仔裤">细分</a><a  href="#" target="_blank" title="休闲裤">细分</a></p>
+                                            <em>&gt;</em></div>
+                                        <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"></div></div></div></div>
+                                        </textarea>
+                                    </li>
+                                    <li class="appliance js_toggle relative">
+                                        <div class="category-info list-nanz">
+                                            <h3 class="category-name b-category-name"><i></i><a id="" href="#" target="_blank" class="ml-22" title="男装">兼职</a></h3>
+                                            <p class="c-category-list limit-24"><a id="" href="#" target="_blank" title="T恤">细分</a><a id="" href="#" target="_blank" title="衬衫">细分</a><a href="#" target="_blank" title="牛仔裤">细分</a><a  href="#" target="_blank" title="休闲裤">细分</a></p>
+                                            <em>&gt;</em></div>
+                                        <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"></div></div></div></div>
+                                        </textarea>
+                                    </li>
+                                    <li class="appliance js_toggle relative">
+                                        <div class="category-info list-nanz">
+                                            <h3 class="category-name b-category-name"><i></i><a  href="#" target="_blank" class="ml-22" title="男装">兼职</a></h3>
+                                            <p class="c-category-list limit-24"><a  href="#" target="_blank" title="T恤">细分</a><a  href="#" target="_blank" title="衬衫">细分</a><a  href="#" target="_blank" title="牛仔裤">细分</a><a  href="#" target="_blank" title="休闲裤">细分</a></p>
+                                            <em>&gt;</em></div>
+                                        <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"></div></div></div></div>
+                                        </textarea>
+                                    </li>
+                                    <li class="appliance js_toggle relative">
+                                        <div class="category-info list-nanz">
+                                            <h3 class="category-name b-category-name"><i></i><a id="s-category-292" href="#" target="_blank" class="ml-22" title="男装">兼职</a></h3>
+                                            <p class="c-category-list limit-24"><a id="s-goods-category-292-1" href="#" target="_blank" title="T恤">细分</a><a id="s-goods-category-292-2" href="#" target="_blank" title="衬衫">细分</a><a id="s-goods-category-292-3" href="#" target="_blank" title="牛仔裤">细分</a><a id="s-goods-category-292-4" href="#" target="_blank" title="休闲裤">细分</a></p>
+                                            <em>&gt;</em></div>
+                                        <textarea class="menu-item-wrap none"><div class="menu-item menu-in top"><div class="area-in"><div class="area-bg"><div class="menu-srot"></div></div></div></div>
+                                        </textarea>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+-->
+<script src="js/index_v20.js" type="text/javascript"></script>
+<script type="text/javascript">
+        (function(){
+            var $menuLi =$('#nav .menu');
+            var $menuHd = $('#nav .menu-hd');
+            var $menuBd = $('#nav .menu-bd');
+            var $arrow = $('#nav .m1 i');
+            $menuBd.hover(function(){
+                $menuHd.addClass('on');
+            },function(){
+                $menuHd.removeClass('on');
+            });
+            $menuLi.hover(function(){
+                $menuHd.children('b').addClass('b-on');
+            },function(){
+                $menuHd.children('b').removeClass('b-on');
+            })
+        })();
+</script>
+</body>
+</html>

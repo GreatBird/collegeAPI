@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>首页</title>
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="javascript/jquery.bxslider/jquery.bxslider.css" rel="stylesheet">
+    <style>
+        .mid{
+            margin-top: 40px;
+        }
+        .bxslider1{
+        }
+        .hot_msg{
+            height: 300px;
+            background: linear-gradient(45deg, #020031 0px, #6d3353 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+
+        }
+        .box{
+            overflow: hidden;
+            margin-top: 10px;
+            border: 2px solid #000000;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+<!--顶部条-->
+<header>
+    <div class="container-fluid">
+        <div class="row header">
+            <div class="col-md-1 col-md-offset-1">
+                <a href="#"><img alt="猎聘网logo" class="pngfix" src="http://s.lietou-static.com/revs/p/beta2/images/logo_a2145e0d.png" width="110" height="40" /><em><i class="icons16 icons16-home-white" title="首页"></i></em></a>
+            </div>
+            <div class="col-md-3 col-md-offset-1">
+                <div class="input-group input-group-sm search" style="width: 200px;padding-top: 4px;float: right;">
+                    <input type="text" class="form-control"  placeholder="想知道些什么？" aria-describedby="basic-addon2">
+                    <span onclick="" class="input-group-addon" id="basic-addon2">Go</span>
+                </div>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <span class="header-link">
+                       <!--<span>欢迎来到我们的网站</span>-->
+                        <a class="" href="#"><img src="img/icon/mesg.png"></a>
+                        <a class="" href="login.html"><img src="img/icon/login.png"></a>
+                        <a class="" href="me.html"><img src="img/icon/me.png"></a>
+
+                </span>
+            </div>
+        </div>
+    </div>
+</header>
+<div style="height: 40px"></div>
+<!--顶部条结束-->
+
+
+<!--头部宣传窗-->
+<div class="top-box">
+
+</div>
+<!--<div class="navbar navbar-default" >
+    <a href="#">首页</a>
+    <a href="#">分类</a>
+    <a href="#">发布</a>
+    <a href="#">不知道</a>
+</div>-->
+<!--中部主体-->
+<div class="container mid" >
+    <!--左侧热点-->
+    <div class="col-md-6 left">
+        <ul class="bxslider1">
+            <li><div class="hot_msg">
+                <h2 style="text-align: center">热点墙1</h2>
+                <ul >
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                </ul>
+            </div></li>
+            <li><div class="hot_msg">
+                <h2 style="text-align: center">热点墙2</h2>
+                <ul >
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                </ul>
+            </div></li>
+            <li><div class="hot_msg">
+                <h2 style="text-align: center">热点墙3</h2>
+                <ul >
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                </ul>
+            </div></li>
+            <li><div class="hot_msg">
+                <h2 style="text-align: center">热点墙4</h2>
+                <ul >
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                    <li><a href="#">热门帖子</a></li>
+                </ul>
+            </div></li>
+
+        </ul>
+    </div>
+    <!--右侧相册-->
+    <div class="col-md-6 right" >
+        <ul class="bxslider2">
+            <li><img src="img/1.JPG"> </li>
+            <li><img src="img/2.JPG"> </li>
+            <li><img src="img/3.JPG"> </li>
+            <li><img src="img/4.JPG"> </li>
+            <li><img src="img/5.JPG"> </li>
+
+        </ul>
+    </div>
+</div>
+<div class="container" style="height: 1000px;">
+    <div id="masonry" class="container-fluid">
+        <div class="box"><a href="post-list.html"><img src="img/1.JPG"></a> </div>
+        <div class="box"><img src="img/13.JPG"></div>
+        <div class="box"><img src="img/2.JPG"></div>
+        <div class="box"><img src="img/11.JPG"></div>
+        <div class="box"><img src="img/3.JPG"></div>
+        <div class="box"><img src="img/4.JPG"></div>
+        <div class="box"><img src="img/5.JPG"></div>
+        <div class="box"><img src="img/6.JPG"></div>
+        <div class="box"><img src="img/7.JPG"></div>
+        <div class="box"><img src="img/8.JPG"></div>
+        <div class="box"><img src="img/9.JPG"></div>
+        <div class="box"><img src="img/10.JPG"></div>
+        <div class="box"><img src="img/12.JPG"></div>
+    </div>
+</div>
+
+</div>
+
+<script src="javascript/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="javascript/jquery.bxslider/jquery.bxslider.min.js" type="text/javascript"></script>
+<script src="javascript/masonry/masonry.pkgd.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    init();
+});
+
+
+
+
+
+
+
+
+/*初始化函数*/
+function init(){
+    var slider_1=$(".bxslider1").bxSlider({
+        auto:true,
+        pause:4000,
+        slideMargin: 5,
+        controls:false,
+        tickerHover:true
+    });
+    var slider_2=$(".bxslider2").bxSlider({
+        mode:'vertical',
+        auto:true,
+        pause:6000  ,
+        controls:false,
+        slideMargin: 5
+    });
+    $('#masonry').masonry({
+        itemSelector: '.box',
+        gutter: 10,
+        isAnimated: true,
+        "columnWidth": 30,
+        "isOriginLeft": true
+    });
+}
+/*初始化函数结束*/
+</script>
+
+</body>
+</html>

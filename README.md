@@ -227,6 +227,55 @@ updateResponse.php<br>
 <br>
 
 
+8.新增的接口（2015-8-29）<br>
+
+job/下面的接口 <br><br>
+
+getAllCategories.php<br>
+获取所有帖子分类接口，返回格式为json数组。<br><br>
+
+getJobsByDistance.php<br>
+根据当前帖子的距离获取指定距离范围内的所有帖子接口<br>
+传入参数 name为post_id(必须传入，当前帖子的id)  ,name为distance（必须传入，指定距离范围，米为单位，如传如1000，则意味着选取1000米范围内的帖子）
+name为date（可选，如果不传入默认选择最近30天的，如果传入为3，意味着获取最近3天的数据）<br>
+返回数据格式为json数组<br><br>
+
+getRecentJobs.php<br>
+根据传入参数获取最近多少天之内发布的帖子。<br>
+入参数 name为date（必须，如果不传入默认选择最近3天的，如果传入为7，意味着获取最近7天的数据）<br>
+返回数据格式为json数组<br><br>
+
+photo.php<br>
+上传帖子图片接口，图片是分开单独上传的，这样统一方便各位同学一起使用。<br>
+必须传入的参数是name为post_id（帖子id）的参数，可以上传多张图片，图片（file名字可随意命名），图片校验请客户端同学自行校验。<br>
+返回格式是json数组，内容是各个图片的存储相对路径。<br><br>
+
+getJobsAddress.php<br>
+获取指定帖子id的所有图片<br>
+传入参数name为post_id（必须）<br>
+返回是json数组<br><br>
+
+user/下新增两个接口<br>
+photo.php<br>
+上传用户图片的接口，课同时上传多张图片<br>
+传入参数name为nickname（必须）<br>
+返回格式为json数组，返回刚刚上传所有图片的相对路径。<br><br>
+
+getUserAddress.php<br>
+获取用户上传图片接口。<br>
+传入参数为name为nickname（必须）<br>
+返回格式为json数组，也就是所有图片地址的相对路径。<br><br>
+
+
+message/下面新增三个接口<br>
+addMessage.php<br>
+新增站内信，也就是发送站内信接口。使用方式与以前的接口类似，传入可变数量的key  value，key与数据库字段保持一致。<br><br>
+
+queryMessageBase.php<br>
+使用方式类似于以前的查询接口，传入可变参数获取json数组。<br><br>
+
+updateMessage.php<br>
+更新站内信接口，一般会用不到。使用方法为传入name为message_id（必须），然后再传入可变数量的key value，字段与数据库保持一致。<br><br>
 
 
 
