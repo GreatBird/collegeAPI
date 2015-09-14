@@ -277,7 +277,8 @@ queryMessageBase.php<br>
 updateMessage.php<br>
 更新站内信接口，一般会用不到。使用方法为传入name为message_id（必须），然后再传入可变数量的key value，字段与数据库保持一致。<br><br>
 
-
+9.新增接口(2015-9-15)<br>
+新增collegeAPI/sendSMS/sendSMS.php接口，使用方法为，通过post方法传入名字为phone的手机号即可（非json格式），该接口会调用第三方API进行发送短信，并且此接口返回格式如下{"rand6":"128478"}，其中6位数字为随机生成的。需要注意的是测试阶段最多只能有两个号码进行同时测试。
 
 
 
